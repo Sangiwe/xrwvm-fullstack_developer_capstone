@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Best Cars Dealership</title>
+  <!-- Link the style sheets -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+  <div>
+    <!-- Navigation Bar with Contact Us active -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Contact Form & Info Card -->
+    <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 20px;">
+      <div class="banner" name="contact-header" style="text-align: center; padding-bottom: 20px;">
+        <h1 style="color: #008b8b;">Contact Us</h1>
+        <p style="font-size: 1.1em;">We would love to hear from you! Reach out to our dealership team with any questions, sales inquiries, or customer support needs.</p>
+      </div>
+      
+      <div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;">
+        <!-- Contact Information Side -->
+        <div class="card" style="width: 45%; padding: 20px; background-color: #f8f9fa;">
+          <h3 style="color: darkturquoise; margin-bottom: 20px;">Get in Touch</h3>
+          <p><strong>Address:</strong> 123 Innovation Drive, Tech City, NY 10001</p>
+          <p><strong>Customer Service:</strong> +1 (800) 555-0199</p>
+          <p><strong>Sales Inquiry:</strong> +1 (800) 555-0144</p>
+          <p><strong>Email:</strong> contact@bestcarsdealership.com</p>
+          <p><strong>Hours of Operation:</strong></p>
+          <ul>
+            <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+            <li>Saturday: 9:00 AM - 6:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+
+        <!-- Contact Form Side -->
+        <div class="card" style="width: 50%; padding: 20px;">
+          <h3 style="color: darkturquoise; margin-bottom: 20px;">Send Us a Message</h3>
+          <form onsubmit="event.preventDefault(); alert('Thank you for contacting Best Cars!');">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailAddr" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailAddr" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="messageText" class="form-label">Message</label>
+              <textarea class="form-control" id="messageText" rows="4" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="background-color: darkturquoise; color: white;">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
